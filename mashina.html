@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="..\css\cssstyle.css" type="text/css" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9AvuSBtbdPDKhShWYAEsF6U5f5CGAxAmaBGqayxoPw&s"
+    />
+  </head>
+  <body>
+    <div class="inspector">
+      <div class="calculator-inspector">
+        <div class="button-box">
+          <button class="button" id="button1">
+            нажать, если скупаешь пыль
+          </button>
+          <button class="button" id="button2">
+            нажать, если скупаешь протоарты
+          </button>
+          <button class="button" id="button3">
+            нажать, если скупаешь запаски
+          </button>
+        </div>
+        <div class="input-box">
+          <input
+            class="input"
+            id="input1"
+            value=""
+            placeholder="по какой цене пыль"
+          />
+          <input
+            class="input"
+            id="input2"
+            value=""
+            placeholder="по какой цене прото"
+          />
+          <input
+            class="input"
+            id="input3"
+            value=""
+            placeholder="по какой цене запаски"
+          />
+        </div>
+        <div class="input2-box">
+          <input
+            class="input"
+            id="input4"
+            value=""
+            placeholder="сколько пыли"
+          />
+          <input
+            class="input"
+            id="input5"
+            value=""
+            placeholder="сколько прото"
+          />
+          <input
+            class="input"
+            id="input6"
+            value=""
+            placeholder="сколько запасок"
+          />
+        </div>
+        <input id="inputsumm" disabled value="" />
+        <button class="button" id="summ">суммировать</button>
+        <div class="input-3">
+          <input
+            class="input"
+            id="inputcol1"
+            placeholder="кол-во пыли"
+            disabled
+            value=""
+          />
+          <input
+            class="input"
+            id="inputcol2"
+            placeholder="кол-во протоартов"
+            disabled
+            value=""
+          />
+          <input
+            class="input"
+            id="inputcol3"
+            disabled
+            value=""
+            placeholder="кол-во запасок"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      let anomaly = document.querySelector("#button1");
+      let proto = document.querySelector("#button2");
+      let zapas = document.querySelector("#button3");
+      let input1 = document.querySelector("#input1");
+      let input2 = document.querySelector("#input2");
+      let input3 = document.querySelector("#input3");
+      let input4 = document.querySelector("#input4");
+      let input5 = document.querySelector("#input5");
+      let input6 = document.querySelector("#input6");
+      let inputcol1 = document.querySelector("#inputcol1");
+      let inputcol2 = document.querySelector("#inputcol2");
+      let inputcol3 = document.querySelector("#inputcol3");
+
+      let summ = document.querySelector("#summ");
+      let inputsumm = document.querySelector("#inputsumm");
+
+      anomaly.addEventListener("click", function () {
+        input1.classList.toggle("active");
+        input4.classList.toggle("active");
+        inputcol1.classList.toggle("active");
+        input4.value = "";
+      });
+      proto.addEventListener("click", function () {
+        input2.classList.toggle("active");
+        input5.classList.toggle("active");
+        inputcol2.classList.toggle("active");
+        input5.value = "";
+      });
+      zapas.addEventListener("click", function () {
+        input3.classList.toggle("active");
+        input6.classList.toggle("active");
+        inputcol3.classList.toggle("active");
+        input6.value = "";
+      });
+      summ.addEventListener("click", function () {
+        inputsumm.value =
+          Number(input4.value) * Number(input1.value) +
+          Number(input5.value) * Number(input2.value) +
+          Number(input6.value) * Number(input3.value);
+          inputcol1.value = input4.value;
+          inputcol2.value = input5.value;
+          inputcol3.value = input6.value;
+          input4.value = "";
+          input5.value = "";
+          input6.value = "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+.inspector{
+  width: 99%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-image: url(https://oir.mobi/uploads/posts/2021-03/1616967527_15-p-fon-dlya-strima-17.jpg);
+  background-size: 100%
+}
+.calculator-inspector{
+  width:500px;
+  height: 300px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+}
+.button-box{
+  width: 450px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+.input-box{
+  width: 550px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.input2-box{
+    width: 550px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#summ{
+  height: 50px;
+  color: white;
+}
+.input{
+  width: 150px;
+  margin: 0px 20px 0px 20px;
+  display:none;
+}
+#input1.active{
+  display:block;
+}
+#input2.active{
+  display:block;
+}
+#input3.active{
+  display:block;
+}
+#input4.active{
+  display:block;
+}
+#input5.active{
+  display:block;
+}
+#input6.active{
+  display:block;
+}
+#inputcol1.active{
+  display:block;
+  margin-top: 20px;
+}
+#inputcol2.active{
+  display:block;
+  margin-top: 20px;
+}
+#inputcol3.active{
+  display:block;
+  margin-top: 20px;
+}
+.button{
+  width: 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: rgb(23, 128, 199);
+  margin: 0px 20px 0px 20px;
+  color: white;
+}
+#button1{
+  margin-bottom: 20px;
+}
+#button2{
+  margin-bottom: 20px;
+}
+#button3{
+  margin-bottom: 20px;
+}
+.button:hover{
+  background: rgb(28, 228, 38);
+  transition: 500ms
+}
+#input-summ{
+  width: 50px;
+}
+.input-3{
+  width: 550px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
