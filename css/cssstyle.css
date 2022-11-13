@@ -103,6 +103,7 @@ body{
 }
 #input-summ{
   width: 50px;
+  color: white;
 }
 .input-3{
   width: 550px;
@@ -113,3 +114,5 @@ body{
   justify-content: center;
   align-items: center;
 }
+input{
+  color: white;
