@@ -2,7 +2,7 @@
   width: 99%;
   height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 body{
@@ -123,6 +123,7 @@ body{
   width: 500px;
   height: 300px;
   flex-wrap: wrap;
+  margin-left: 150px
 }
 .input-proto{
   width: 150px;
