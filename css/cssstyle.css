@@ -114,3 +114,30 @@ body{
   justify-content: center;
   align-items: center;
 }
+.calculator-proto{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin-left: 150px;
+  height: 300px;
+  flex-wrap: wrap;
+}
+.input-proto{
+  width: 150px;
+  margin-top: 10px;
+  height: 20px;
+  color: black
+}
+#button-proto{
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 185px;
+}
+#input-summ-proto{
+  position: relative;
+  bottom: 35px;
+  right: 80px;
+}
+
