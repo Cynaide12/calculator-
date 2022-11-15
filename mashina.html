@@ -154,6 +154,16 @@
           input5.value = "";
           input6.value = "";
       });
+            let buttonProto = document.querySelector('#button-proto')
+      let proto_1 = document.querySelector('#proto-1')
+      let proto_2 = document.querySelector('#proto-2')
+      let proto_3 = document.querySelector('#proto-3')
+      let proto_4 = document.querySelector('#proto-4')
+      let proto_5 = document.querySelector('#proto-5')
+      let inputSummProto = document.querySelector('#input-summ-proto')
+      buttonProto.addEventListener('click', function(){
+        inputSummProto.value = Number(proto_1.value) + Number(proto_2.value) + Number(proto_3.value) + Number(proto_4.value) + Number(proto_5.value)
+      })
     </script>
   </body>
 </html>
